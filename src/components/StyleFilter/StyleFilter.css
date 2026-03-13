@@ -27,3 +27,22 @@
   background: black;
   color: white;
 }
+
+.stylesContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.stylesContainer {
+  scrollbar-width: none;
+}
+
+
+.stylesContainer::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.stylesContainer::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
