@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { StyleFilter } from "../../components/StyleFilter";
-import { LooksGrid } from "../../components/LooksGrid";
+import { LooksGrid, type Look } from "../../components/LooksGrid";
 import { looks } from "../../data/mockLooks";
 
 import { models } from "../../data/mockModels";
@@ -11,7 +11,7 @@ export function VirtualTryOn() {
   const [selectedStyle, setSelectedStyle] = useState("all");
   const availableStyles = ["all", ...new Set(looks.map((look) => look.style))];
   const [selectedModelId, setSelectedModelId] = useState(models[0].id);
-  const [selectedLook, setSelectedLook] = useState(null);
+  const [selectedLook, setSelectedLook] = useState<Look | null>(null);
 
   const selectedModel =
     models.find((model) => model.id === selectedModelId) ?? models[0];

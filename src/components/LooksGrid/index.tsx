@@ -4,7 +4,7 @@ import { CaretLeft, CaretRight } from "@phosphor-icons/react";
 import "./LooksGrid.css";
 import { looks } from "../../data/mockLooks";
 
-type Look = {
+export type Look = {
   id: number;
   style: string;
   name: string;
@@ -16,7 +16,7 @@ type Look = {
 type Props = {
   selectedStyle: string | null;
   selectedLook: Look | null;
-  onSelectLook: (look: Look) => void;
+  onSelectLook: (look: Look | null) => void;
 };
 
 export function LooksGrid({
