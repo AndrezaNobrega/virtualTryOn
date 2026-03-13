@@ -1,73 +1,132 @@
-# React + TypeScript + Vite
+# Virtual Try-On 👗✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel)](https://virtual-try-on-six-mu.vercel.app/)
 
-Currently, two official plugins are available:
+🌐 **Try it here:**  
+https://virtual-try-on-six-mu.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A modern web experience that allows users to preview fashion looks on different models before trying them on.
 
-## React Compiler
+The application focuses on **performance, smooth UI interactions and responsive design**, providing a seamless browsing experience across desktop and mobile devices.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Model selection with visual feedback
+* Style filtering (Minimal, Casual, Chic, Bold, etc.)
+* Horizontal look gallery with smooth scrolling
+* Interactive look cards
+* Responsive layout optimized for mobile
+* Skeleton loading states for better perceived performance
+* Image lazy loading
+* Smooth image fade-in transitions
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ⚡ Performance & UX Improvements
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Special attention was given to **loading experience and layout stability**:
+
+* Skeleton loaders to avoid empty UI states
+* Lazy loading for images
+* Smooth image transitions
+* Mobile-friendly horizontal scrolling
+* Hidden scrollbars for cleaner UI
+
+These improvements ensure a **fast and stable user experience**, even on slower connections.
+
+---
+
+## 🧱 Tech Stack
+
+* **React**
+* **TypeScript**
+* **CSS**
+* **Phosphor Icons**
+* **React Loading Skeleton**
+
+---
+
+## 📱 Responsive Design
+
+The interface adapts to different screen sizes:
+
+* Mobile-first layout
+* Horizontal scroll components
+* Optimized image loading
+* Touch-friendly interactions
+
+---
+
+## 📂 Project Structure
+
+```
+src
+ ├── components
+ │   ├── LookCard
+ │   ├── LooksGrid
+ │   ├── ModelSelector
+ │   ├── ModelViewer
+ │   └── StyleFilter
+ │
+ ├── data
+ │   ├── mockLooks
+ │   └── mockModels
+ │
+ ├── pages
+ │   └── VirtualTryOn
+ │
+ └── styles
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone the repository:
+
+```bash
+git clone https://github.com/andrezanobrega/virtual-try-on
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the project:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🎨 Design Goals
+
+The project was built with focus on:
+
+* **Clean UI**
+* **Fast perceived performance**
+* **Smooth interactions**
+* **Scalable component structure**
+
+---
+
+## 📸 Preview
+
+*(Add screenshots or a demo GIF here)*
+
+Example:
+
+* Model selection
+* Look filtering
+* Virtual try-on preview
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
