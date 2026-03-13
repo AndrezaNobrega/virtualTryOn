@@ -1,0 +1,78 @@
+.looksContainer {
+  position: relative;
+}
+
+.looksGrid {
+  display: flex;
+  gap: 16px;
+
+  overflow-x: auto;
+  padding: 4px 0 8px 0;
+
+  scroll-snap-type: x mandatory;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.looksGrid::-webkit-scrollbar {
+  display: none;
+}
+
+/* GRID */
+
+.looksGrid {
+  display: flex;
+  gap: 16px;
+
+  overflow-x: auto;
+  padding: 4px 0 8px 0;
+
+  scroll-snap-type: x mandatory;
+}
+
+.looksGrid::-webkit-scrollbar {
+  display: none;
+}
+
+/* BOTÕES */
+
+.scrollButton {
+  position: absolute;
+  top: 45%;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: white;
+
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  z-index: 10;
+}
+
+.scrollButton:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.scrollButton.left {
+  left: 4px;
+}
+
+.scrollButton.right {
+  right: 4px;
+}

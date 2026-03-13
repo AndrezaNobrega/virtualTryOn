@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f7f7f7;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.model img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.tryButton {
+  width: 100%;
+  padding: 14px;
+  margin: 16px 0;
+  border-radius: 10px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 16px;
+}
+
+.styles {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.looks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
