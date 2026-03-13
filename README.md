@@ -1,6 +1,21 @@
-# Virtual Try-On 👗✨
+<p align="center">
+  <img width="600" alt="Virtual Try-On Banner" src="https://github.com/user-attachments/assets/fef78ae0-1535-4a13-b6a8-2d7b51482256" />
+</p>
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel)](https://virtual-try-on-six-mu.vercel.app/)
+<h1 align="center">Virtual Try-On 👗✨</h1>
+
+<p align="center">
+  <a href="https://virtual-try-on-six-mu.vercel.app/">
+    <img src="https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel" />
+  </a>
+</p>
+
+<p align="center">
+Preview fashion looks on different models directly in the browser.
+</p>
+
+
+
 
 🌐 **Try it here:**  
 https://virtual-try-on-six-mu.vercel.app/
@@ -115,17 +130,6 @@ The project was built with focus on:
 
 ---
 
-## 📸 Preview
-
-*(Add screenshots or a demo GIF here)*
-
-Example:
-
-* Model selection
-* Look filtering
-* Virtual try-on preview
-
----
 
 ## 📄 License
 
